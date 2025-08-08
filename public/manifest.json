@@ -1,0 +1,16 @@
+{
+  "name": "George Daniel Portfolio",
+  "short_name": "GeorgeDaniel",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#6f1cd7",
+  "description": "Creative Software Engineer specializing in web development.",
+  "icons": [
+    {
+      "src": "/favicon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
