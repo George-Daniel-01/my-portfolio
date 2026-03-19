@@ -4,26 +4,26 @@ import Resume from "./resume";
 const resumeUrl = '/pdf/resume.pdf';
 import { motion } from "framer-motion";
 
-
 export const projects = [
   {
-    name: "RunMeCV AI",
-    company: "AI-Powered Platforms", 
+    name: "My Portfolio",
+    company: "Personal Project",
     location: "Remote",
-    period: "2024 - 2026", 
-    desc: "Resume/CV Generation Site Using AI",
-    tech: "Next.js + Node.js + TailwindCSS",
+    period: "2025",
+    desc: "Personal Portfolio Website",
+    tech: "Next.js + TailwindCSS + Framer Motion",
+    link: "https://my-portfolio-lyart-ten-93.vercel.app/",
     details: [
-      "Architected an AI-driven system to generate professional CVs dynamically.",
-      "Integrated large language models to provide tailored content suggestions based on user input.",
-      "Built a seamless user interface with real-time PDF generation and previewing capabilities."
+      "Built a personal portfolio website showcasing projects, skills, and professional experience.",
+      "Designed a modern, responsive UI using Next.js App Router, Tailwind CSS and Framer Motion animations.",
+      "Integrated a CV download feature and contact form for seamless recruiter engagement."
     ]
   },
   {
     name: "ShopMate E-Commerce",
     company: "Fullstack E-Commerce",
     location: "Production App",
-    period: "2025 - 2026", 
+    period: "2025 - 2026",
     desc: "Full-stack AI-powered e-commerce platform",
     tech: "React.js + Node.js + TypeScript + PostgreSQL",
     link: "https://shop-mate-six-azure.vercel.app/",
@@ -87,7 +87,7 @@ const Experience = () => {
                         </a>
                       )}
                     </div>
-                    
+
                     <div className="flex flex-col md:flex-row md:items-center gap-2 md:gap-4 my-4">
                       <p className="text-[#6f1cd7] font-medium tracking-wide">{project.company}</p>
                       <div className="flex items-center gap-4">
