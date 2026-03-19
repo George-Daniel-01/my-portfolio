@@ -4,7 +4,7 @@ export const projects = [
     name: "RunMeCV AI",
     desc: "Resume/CV Generation Site Using AI",
     lang: "Next.js + Node.js + TailwindCSS",
-    link: "",
+    link: "https://my-portfolio-lyart-ten-93.vercel.app/",
   }, 
    {
   name: "ShopMate E-Commerce",
