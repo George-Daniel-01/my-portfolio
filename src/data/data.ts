@@ -1,8 +1,8 @@
 export const projects = [
 
   {
-    name: "RunMeCV AI",
-    desc: "Resume/CV Generation Site Using AI",
+    name: "My Portfolio",
+    desc: "Personal Portfolio Website",
     lang: "Next.js + Node.js + TailwindCSS",
     link: "https://my-portfolio-lyart-ten-93.vercel.app/",
   }, 
