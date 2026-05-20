@@ -1,19 +1,23 @@
 export const projects = [
-
   {
     name: "My Portfolio",
     desc: "Personal Portfolio Website",
     lang: "Next.js + Node.js + TailwindCSS",
     link: "https://my-portfolio-lyart-ten-93.vercel.app/",
-  }, 
-   {
-  name: "ShopMate E-Commerce",
-  desc: "Full-stack AI-powered e-commerce platform with customer storefront, admin dashboard, Stripe payments, and Google Gemini AI product search",
-  lang: "React.js + Node.js + TypeScript + PostgreSQL",
-  link: "https://shop-mate-six-azure.vercel.app/",
-},
+  },
+  {
+    name: "ShopMate E-Commerce",
+    desc: "Full-stack AI-powered e-commerce platform with customer storefront, Stripe payments, and Google Gemini AI product search",
+    lang: "React.js + Node.js + TypeScript + PostgreSQL",
+    link: "https://shop-mate-six-azure.vercel.app/",
+  },
+  {
+    name: "ShopMate Admin Dashboard",
+    desc: "Full-stack admin panel for managing products, orders, and users with role-based authentication and real-time analytics",
+    lang: "React.js + Node.js + TypeScript + PostgreSQL",
+    link: "https://shop-dashboard-tan.vercel.app/",
+  },
 ];
-
 
 export const skills = [
   { id: 1, title: "HTML" },

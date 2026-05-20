@@ -29,9 +29,24 @@ export const projects = [
     link: "https://shop-mate-six-azure.vercel.app/",
     details: [
       "Developed a robust storefront with complex state management using Redux/Context API.",
-      "Implemented a full-featured Admin Dashboard for product, order, and customer management.",
       "Integrated Stripe API for secure payment processing and Google Gemini AI for intelligent product search.",
-      "Managed relational database architecture using PostgreSQL and optimized query performance."
+      "Managed relational database architecture using PostgreSQL and optimized query performance.",
+      "Built JWT authentication with secure cookie-based sessions and role-based access control."
+    ]
+  },
+  {
+    name: "ShopMate Admin Dashboard",
+    company: "Fullstack E-Commerce",
+    location: "Production App",
+    period: "2025 - 2026",
+    desc: "Full-stack admin panel for ShopMate",
+    tech: "React.js + Node.js + TypeScript + PostgreSQL",
+    link: "https://shop-dashboard-tan.vercel.app/",
+    details: [
+      "Built a full-featured admin dashboard for managing products, orders, and customers.",
+      "Implemented real-time analytics and sales charts using Recharts.",
+      "Designed role-based authentication so only admins can access the dashboard.",
+      "Integrated Cloudinary for product image uploads and management."
     ]
   }
 ];
