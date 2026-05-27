@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata, Viewport } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
 
@@ -8,7 +8,12 @@ const geistSans = Poppins({
   weight: ['400', '500', '600', '700', '800', '900'],
 });
  
+export const viewport: Viewport = {
+  themeColor: '#6f1cd7',
+};
+
 export const metadata: Metadata = {
+  metadataBase: new URL('https://my-portfolio-lyart-ten-93.vercel.app'),
   title: 'George Daniel | Creative Software Engineer',
   description: 'Creative Software Engineer with 6+ years of experience, specializing in full-stack web development, backend architecture, and scalable digital products. Building high-performance experiences with React, Node.js, and PostgreSQL.',
   keywords: ['George Daniel', 'Software Engineer', 'Full Stack Developer', 'Web Development', 'Backend Developer', 'Node.js', 'PostgreSQL', 'React Developer'],
@@ -62,7 +67,6 @@ export const metadata: Metadata = {
   verification: {
     google: 'your-google-verification-code',
   },
-  themeColor: '#6f1cd7',
   manifest: '/manifest.json',
   appleWebApp: {
     capable: true,

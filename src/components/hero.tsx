@@ -1,4 +1,4 @@
-'use client'
+﻿'use client'
 import { motion } from "framer-motion";
 import { FbIcon, IgIcon, InIcon, TwIcon } from "./svgs";
 import Image from 'next/image';
@@ -92,7 +92,7 @@ const Hero = () => {
                 <Image
                   src="/images/hero.png"
                   alt="George Daniel"
-                  fill
+                  fill sizes="(max-width: 768px) 280px, 380px"
                   className="object-cover object-top"
                   draggable={false}
                   priority
