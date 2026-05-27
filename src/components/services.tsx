@@ -45,7 +45,7 @@ const Services = () => {
                 >
                     <h1 className="text-2xl md:text-3xl font-clashbold text-white mb-6 tracking-tight">
                         Services
-                        <span className="inline-block ml-4 transform hover:scale-110 transition-transform">ðŸ”¥</span>
+                        <span class="inline-block ml-4 transform hover:scale-110 transition-transform">🔥</span>
                     </h1>
                     <div className="h-1 w-24 bg-gradient-to-r from-purple-500 to-blue-500 mb-6" />
                     <p className="text-[#FFFFFF99] text-base md:text-l ">
