@@ -67,7 +67,6 @@ export const metadata: Metadata = {
   verification: {
     google: 'your-google-verification-code',
   },
-  manifest: '/manifest.json',
   appleWebApp: {
     capable: true,
     statusBarStyle: 'default',
