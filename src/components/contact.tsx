@@ -1,4 +1,4 @@
-"use client"
+﻿"use client"
 import { useState, useEffect } from "react";
 import { LocationIcon, MailIcon, PhoneIcon } from "./svgs";
 
@@ -36,7 +36,7 @@ const Contact = () => {
         </h1>
 
         <p className="flex items-center font-semibold text-[15px] leading-[22.5px] md:text-[20px] md:leading-[30px] text-[#FFFFFF99]">
-          SAY HELLO! <small className={`animate-bounce`}>👋</small>
+          SAY HELLO! <small class="animate-bounce">👋</small>
         </p>
       </div>
       <div
@@ -50,7 +50,7 @@ const Contact = () => {
           </div>
           <a
             className={`text-[#FFFFFF99] font-medium text-base md:text-[20px] md:leading-[30px]`}
-            href="georgeabiamakadaniel@gmail.com"
+            href="mailto:georgeabiamakadaniel@gmail.com"
           >
             georgeabiamakadaniel@gmail.com
           </a>
@@ -77,9 +77,9 @@ const Contact = () => {
           <p
             className={`text-[#FFFFFF99] text-base mx-auto text-center font-medium md:text-[20px] md:leading-[30px]`}
           >
-            {timeOfDay === "morning" && <span>metaverse!⚡</span>}
-            {timeOfDay === "afternoon" && <span>localhost:3000</span>}
-            {timeOfDay === "evening" && <span>127.0.0.1:5500</span>}
+            {timeOfDay === "morning" && <span>metaverse!âš¡</span>}
+            {timeOfDay === "afternoon" && <span>Lagos, Nigeria</span>}
+            {timeOfDay === "evening" && <span>Lagos, Nigeria</span>}
             {/* {timeOfDay === "evening" && <span>somewhere in the metaverse</span>} */}
           </p>
         </div>
