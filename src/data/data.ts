@@ -4,13 +4,13 @@ export const projects = [
     company: "Fullstack E-Commerce",
     location: "Production App",
     period: "2025 - 2026",
-    desc: "AI-powered e-commerce platform with customer storefront, Stripe payments, and Google Gemini product search",
+    desc: "AI-powered e-commerce platform with customer storefront, Stripe payments, and OpenRouter AI product search",
     lang: "React.js + Node.js + TypeScript + PostgreSQL",
     tech: "React.js + Node.js + TypeScript + PostgreSQL",
     link: "https://shop-mate-six-azure.vercel.app/",
     details: [
       "Architected a full-stack e-commerce platform serving real users with secure payment processing via Stripe API.",
-      "Integrated Google Gemini AI for intelligent product search, enabling natural language queries.",
+      "Integrated OpenRouter AI for natural language product search, enabling intelligent shopping queries.",
       "Designed relational database schema in PostgreSQL with optimized queries reducing page load times.",
       "Implemented JWT authentication with secure cookie-based sessions and role-based access control."
     ]
@@ -28,7 +28,7 @@ export const projects = [
       "Built a full-featured admin dashboard for managing products, orders, and customers with real-time analytics via Recharts.",
       "Implemented role-based authentication ensuring only authorized admins can access sensitive operations.",
       "Integrated Cloudinary for efficient product image uploads and CDN-based media management.",
-      "Developed RESTful API endpoints handling thousands of requests with proper error handling and validation."
+      "Developed RESTful API endpoints with OpenRouter AI search handling thousands of requests with proper error handling and validation."
     ]
   },
   {
@@ -36,13 +36,13 @@ export const projects = [
     company: "Fullstack E-Commerce",
     location: "Production API",
     period: "2025 - 2026",
-    desc: "RESTful API with PostgreSQL, JWT auth, Stripe payments, Google Gemini AI search, and Cloudinary media",
+    desc: "RESTful API with PostgreSQL, JWT auth, Stripe payments, OpenRouter AI search, and Cloudinary media",
     lang: "Node.js + Express + TypeScript + PostgreSQL",
     tech: "Node.js + Express + TypeScript + PostgreSQL",
     link: "https://github.com/George-Daniel-01/ShopMate",
     details: [
       "Architected a production RESTful API with Express handling thousands of concurrent requests and secure payment processing via Stripe.",
-      "Integrated Google Gemini AI for natural language product search, enabling AI-powered shopping experiences.",
+      "Integrated OpenRouter AI for natural language product search, enabling AI-powered shopping experiences.",
       "Designed relational PostgreSQL schema with optimized queries, indexes, and migrations for data integrity.",
       "Implemented JWT authentication with secure HTTP-only cookie sessions and role-based access control.",
       "Built file upload pipeline with Cloudinary CDN for efficient product image management and delivery."
