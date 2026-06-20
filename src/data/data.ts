@@ -32,6 +32,23 @@ export const projects = [
     ]
   },
   {
+    name: "ShopMate Backend API",
+    company: "Fullstack E-Commerce",
+    location: "Production API",
+    period: "2025 - 2026",
+    desc: "RESTful API with PostgreSQL, JWT auth, Stripe payments, Google Gemini AI search, and Cloudinary media",
+    lang: "Node.js + Express + TypeScript + PostgreSQL",
+    tech: "Node.js + Express + TypeScript + PostgreSQL",
+    link: "https://github.com/George-Daniel-01/ShopMate",
+    details: [
+      "Architected a production RESTful API with Express handling thousands of concurrent requests and secure payment processing via Stripe.",
+      "Integrated Google Gemini AI for natural language product search, enabling AI-powered shopping experiences.",
+      "Designed relational PostgreSQL schema with optimized queries, indexes, and migrations for data integrity.",
+      "Implemented JWT authentication with secure HTTP-only cookie sessions and role-based access control.",
+      "Built file upload pipeline with Cloudinary CDN for efficient product image management and delivery."
+    ]
+  },
+  {
     name: "My Portfolio",
     company: "Personal Project",
     location: "Remote",
