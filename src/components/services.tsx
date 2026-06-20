@@ -33,7 +33,7 @@ const services = [
 
 const Services = () => {
     return (
-        <section className="relative py-24 px-4 md:px-8 lg:px-16 overflow-hidden">
+        <section id="services" className="relative py-24 px-4 md:px-8 lg:px-16 overflow-hidden">
             <div className="absolute inset-0 " />
 
             <div className="max-w-7xl mx-auto relative">
@@ -48,8 +48,8 @@ const Services = () => {
                         <span className="inline-block ml-4 transform hover:scale-110 transition-transform">🔥</span>
                     </h1>
                     <div className="h-1 w-24 bg-gradient-to-r from-purple-500 to-blue-500 mb-6" />
-                    <p className="text-[#FFFFFF99] text-base md:text-l ">
-                        Specialized in multiple domains of software and hardware engineering
+                    <p className="text-[#FFFFFF99] text-base md:text-lg ">
+                        Specialized in multiple domains of software engineering
                     </p>
                 </motion.div>
 

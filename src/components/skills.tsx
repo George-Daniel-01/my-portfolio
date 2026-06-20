@@ -1,6 +1,5 @@
 "use client"
 
-import Experience from "./experience";
 import { motion } from "framer-motion";
 import { skills } from "../data/data";
 
@@ -8,7 +7,7 @@ const Skills = () => {
 
 
     return (
-        <section className="relative py-32 px-4 md:px-8 lg:px-16 overflow-hidden">
+        <section id="skills" className="relative py-32 px-4 md:px-8 lg:px-16 overflow-hidden">
             <div className="absolute inset-0 bg-gradient-to-b from-[#130b1c] via-[#130b1c]/80 to-transparent opacity-30" />
 
             <div className="max-w-7xl mx-auto relative">
@@ -51,10 +50,6 @@ const Skills = () => {
                             <div className="absolute inset-0 bg-gradient-to-br from-[#6f1cd7]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                         </motion.div>
                     ))}
-                </div>
-
-                <div className="mt-24">
-                    <Experience />
                 </div>
             </div>
         </section>

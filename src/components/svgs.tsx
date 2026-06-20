@@ -22,33 +22,6 @@ export function FbIcon({ className, fill }: IconProps) {
     );
 }
 
-export const GhIcon = ({ className, fill }: IconProps) => {
-    return (
-        <svg
-            xmlns="http://www.w3.org/2000/svg"
-            // width="32"
-            // height="32"
-            className={className}
-            viewBox="0 0 32 32"
-            fill={fill}
-        >
-            <g clipPath="url(#clip0_649_11)">
-                <path
-                    d="M16 0C7.16 0 0 7.16 0 16C0 23.08 4.58 29.06 10.94 31.18C11.74 31.32 12.04 30.84 12.04 30.42C12.04 30.04 12.02 28.78 12.02 27.44C8 28.18 6.96 26.46 6.64 25.56C6.46 25.1 5.68 23.68 5 23.3C4.44 23 3.64 22.26 4.98 22.24C6.24 22.22 7.14 23.4 7.44 23.88C8.88 26.3 11.18 25.62 12.1 25.2C12.24 24.16 12.66 23.46 13.12 23.06C9.56 22.66 5.84 21.28 5.84 15.16C5.84 13.42 6.46 11.98 7.48 10.86C7.32 10.46 6.76 8.82 7.64 6.62C7.64 6.62 8.98 6.2 12.04 8.26C13.32 7.9 14.68 7.72 16.04 7.72C17.4 7.72 18.76 7.9 20.04 8.26C23.1 6.18 24.44 6.62 24.44 6.62C25.32 8.82 24.76 10.46 24.6 10.86C25.62 11.98 26.24 13.4 26.24 15.16C26.24 21.3 22.5 22.66 18.94 23.06C19.52 23.56 20.02 24.52 20.02 26.02C20.02 28.16 20 29.88 20 30.42C20 30.84 20.3 31.34 21.1 31.18C24.2765 30.108 27.0367 28.0667 28.9921 25.3435C30.9474 22.6203 31.9994 19.3525 32 16C32 7.16 24.84 0 16 0Z"
-                    fill="white"
-                // fillOpacity="0.6"
-                />
-            </g>
-            <defs>
-                <clipPath id="clip0_649_11">
-                    <rect width="32" height="32" fill="white" />
-                </clipPath>
-            </defs>
-        </svg>
-    );
-};
-
-
 export const TwIcon = ({ className, fill }: IconProps) => {
     return (
         <svg
@@ -87,46 +60,6 @@ export function IgIcon({ className, fill }: IconProps) {
     );
 }
 
-export function LinkedIcon({ className, fill }: IconProps) {
-
-    return (
-        <svg
-            xmlns="http://www.w3.org/2000/svg"
-            // width="25"
-            // height="25"
-            className={className}
-            viewBox="0 0 25 25"
-            fill={fill}
-        >
-            <mask
-                id="mask0_651_39"
-                 maskUnits="userSpaceOnUse"
-                x="1"
-                y="1"
-                width="23"
-                height="23"
-            >
-                <path
-                    d="M4.68749 6.24999C5.83808 6.24999 6.77082 5.31725 6.77082 4.16666C6.77082 3.01607 5.83808 2.08333 4.68749 2.08333C3.5369 2.08333 2.60416 3.01607 2.60416 4.16666C2.60416 5.31725 3.5369 6.24999 4.68749 6.24999Z"
-                    fill="white"
-                    stroke="white"
-                    strokeWidth="2.08333"
-                />
-                <path
-                    d="M2.60416 9.375H6.77082V22.3958H2.60416V9.375ZM10.9375 14.3229V22.3958H14.5833V15.1042C14.5833 13.8021 15.3646 12.7604 16.6667 12.7604C17.9687 12.7604 18.75 14.0625 18.75 15.1042V22.3958H22.3958V14.3229C22.3958 12.7604 20.5729 9.375 16.6667 9.375C12.7604 9.375 10.9375 12.7604 10.9375 14.3229Z"
-                    fill="white"
-                    stroke="white"
-                    strokeWidth="2.08333"
-                    strokeLinejoin="round"
-                />
-            </mask>
-            <g mask="url(#mask0_651_39)">
-                <path d="M0 0H25V25H0V0Z" fill={fill} /*fill="#6f1cd7"*/ />
-            </g>
-        </svg>
-    );
-};
-
 export function InIcon({ className, fill }: IconProps){
     
     return (
@@ -144,35 +77,6 @@ export function InIcon({ className, fill }: IconProps){
         </svg>
     );
 }
-
-export const ExpCircle = ({ className, fill }: IconProps) => {
-    return (
-        <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="32"
-            height="32"
-            className={className}
-            viewBox="0 0 32 32"
-            fill={fill}
-        >
-            <circle
-                cx="16"
-                cy="16"
-                r="16"
-                transform="matrix(1 0 0 -1 0 32)"
-                fill="#6f1cd7"
-                fillOpacity="0.1"
-            />
-            <circle
-                cx="10"
-                cy="10"
-                r="10"
-                transform="matrix(1 0 0 -1 6 26)"
-                fill="#6f1cd7"
-            />
-        </svg>
-    );
-};
 
 export function Arrow({ className, fill }: IconProps){
     return (

@@ -2,7 +2,7 @@
 import { Poppins } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Poppins({ 
+const poppins = Poppins({ 
   variable: "--font-geist-sans",
   subsets: ["latin"],
   weight: ['400', '500', '600', '700', '800', '900'],
@@ -13,9 +13,9 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://my-portfolio-lyart-ten-93.vercel.app'),
+  metadataBase: new URL('https://georgedaniel.me'),
   title: 'George Daniel | Creative Software Engineer',
-  description: 'Creative Software Engineer with 6+ years of experience, specializing in full-stack web development, backend architecture, and scalable digital products. Building high-performance experiences with React, Node.js, and PostgreSQL.',
+  description: 'Creative Software Engineer with 2+ years of experience, specializing in full-stack web development, backend architecture, and scalable digital products. Building high-performance experiences with React, Node.js, and PostgreSQL.',
   keywords: ['George Daniel', 'Software Engineer', 'Full Stack Developer', 'Web Development', 'Backend Developer', 'Node.js', 'PostgreSQL', 'React Developer'],
   authors: [{ name: 'George Daniel' }],
   creator: 'George Daniel',
@@ -33,25 +33,18 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://georgedaniel.me', // Updated to reflect your name
+    url: 'https://georgedaniel.me',
     siteName: 'George Daniel Portfolio',
     title: 'George Daniel | Creative Software Engineer',
     description: 'Creative Software Engineer building scalable products with great user experiences.',
-    images: [
-      {
-        url: '/og.png',
-        width: 1200,
-        height: 630,
-        alt: 'George Daniel - Creative Software Engineer',
-      },
-    ],
+    images: [{ url: '/images/hero.png', width: 1200, height: 630, alt: 'George Daniel' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'George Daniel | Creative Software Engineer',
     description: 'Creative Software Engineer building scalable products with great user experiences.',
-    creator: '@Georgedamiel_', // Updated to your new X handle
-    images: ['/og.png'],
+    creator: '@georgedaniel_',
+    images: ['/images/hero.png'],
   },
   robots: {
     index: true,
@@ -63,9 +56,6 @@ export const metadata: Metadata = {
       'max-image-preview': 'large',
       'max-snippet': -1,
     },
-  },
-  verification: {
-    google: 'your-google-verification-code',
   },
   appleWebApp: {
     capable: true,
@@ -82,7 +72,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} antialiased`}
+        className={`${poppins.variable} antialiased`}
       >
         {children}
       </body>

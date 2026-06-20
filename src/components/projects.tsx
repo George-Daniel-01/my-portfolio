@@ -6,7 +6,7 @@ import { projects } from "../data/data";
 
 const Projects = () => {
     return (
-        <section className="relative py-24 px-4 md:px-8 lg:px-16 overflow-hidden">
+        <section id="projects" className="relative py-24 px-4 md:px-8 lg:px-16 overflow-hidden">
             <div className="absolute inset-0 bg-gradient-to-b from-[#130b1c] to-transparent opacity-40" />
 
             <div className="max-w-7xl mx-auto relative">
@@ -21,7 +21,7 @@ const Projects = () => {
                         <span className="inline-block ml-4 transform hover:scale-110 transition-transform">🚀</span>
                     </h2>
                     <div className="h-1 w-24 bg-gradient-to-r from-purple-500 to-blue-500 mb-6" />
-                    <p className="text-[#FFFFFF99] text-base md:text-l ">
+                    <p className="text-[#FFFFFF99] text-base md:text-lg ">
                         Showcasing my latest works and experiments in tech
                     </p>
                 </motion.div>

@@ -2,6 +2,7 @@
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
 import { Copyright, FbIcon, IgIcon, InIcon, TwIcon } from "./svgs";
+import { socialLinks } from "../data/data";
 
 const Footer = () => {
   const [time, setTime] = useState<string>('');
@@ -49,7 +50,7 @@ const Footer = () => {
         <div className="mt-[10px] md:mt-[65px] flex justify-start items-center gap-[20px] md:gap-[40px]">
           {/* Facebook */}
           <motion.a
-            href="https://www.facebook.com/profile.php?id=61578554221207"
+            href={socialLinks.facebook}
             target="_blank"
             rel="noreferrer"
             whileTap={{ scale: 1.1 }}
@@ -63,7 +64,7 @@ const Footer = () => {
 
           {/* X (Twitter) */}
           <motion.a
-            href="https://x.com/Georgedamiel_"
+            href={socialLinks.twitter}
             target="_blank"
             rel="noreferrer"
             whileTap={{ scale: 1.1 }}
@@ -77,7 +78,7 @@ const Footer = () => {
 
           {/* Instagram */}
           <motion.a
-            href="https://www.instagram.com/georgeabiamakadaniel2/"
+            href={socialLinks.instagram}
             target="_blank"
             rel="noreferrer"
             whileTap={{ scale: 1.1 }}
@@ -91,7 +92,7 @@ const Footer = () => {
 
           {/* LinkedIn */}
           <motion.a
-            href="https://www.linkedin.com/in/george-damiel/"
+            href={socialLinks.linkedin}
             target="_blank"
             rel="noreferrer"
             whileTap={{ scale: 1.1 }}

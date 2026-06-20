@@ -2,11 +2,12 @@
 import { motion } from "framer-motion";
 import { FbIcon, IgIcon, InIcon, TwIcon } from "./svgs";
 import Image from 'next/image';
+import { socialLinks } from "../data/data";
 
 const Hero = () => {
   return (
     <>
-      <section className="mx-auto px-[38px] pt-[100px] md:px-[26px] lg:pt-[120px] lg:pl-[80px] lg:pr-[40px]">
+      <section id="hero" className="mx-auto px-[38px] pt-[100px] md:px-[26px] lg:pt-[120px] lg:pl-[80px] lg:pr-[40px]">
         <div className="flex flex-col items-start flex-1 md:flex md:flex-row md:gap-10 md:items-center lg:flex lg:flex-row lg:items-center lg:gap-x-12 lg:justify-between">
           
           {/* LEFT SIDE - TEXT */}
@@ -16,7 +17,7 @@ const Hero = () => {
                 Creative Software Engineer<span>.</span>
               </h1>
             </div>
-            <p className="gradientText font-medium font-pop text-[15px] text-[#FFFFFF99] max-w-[353px] mt-[45px] md:mt-8 lg:mt-1 md:max-w-[639px] md:text-[18px] leading-md:[27px]">
+            <p className="gradientText font-medium font-pop text-[15px] text-[#FFFFFF99] max-w-[353px] mt-[45px] md:mt-8 lg:mt-1 md:max-w-[639px] md:text-[18px] md:leading-[27px]">
               I like to craft solid and scalable products with great user experiences.
             </p>
             <div
@@ -33,9 +34,15 @@ const Hero = () => {
               </p>
             </div>
 
-            <div className="mt-[35px] md:mt-[65px] flex justify-start items-center gap-[26px] md:gap-[40px]">
+            <div className="mt-[35px] md:mt-[45px] flex flex-wrap items-center gap-4">
+              <a href="#contact" className="inline-block px-6 py-3 bg-[#6f1cd7] text-white font-medium text-sm rounded hover:bg-[#5a16b0] transition-colors">
+                Hire Me
+              </a>
+            </div>
+
+            <div className="mt-[35px] md:mt-[45px] flex justify-start items-center gap-[26px] md:gap-[40px]">
               <motion.a
-                href="https://www.facebook.com/profile.php?id=61578554221207"
+                href={socialLinks.facebook}
                 target="_blank"
                 rel="noreferrer"
                 whileTap={{ scale: 1.1 }}
@@ -45,7 +52,7 @@ const Hero = () => {
               </motion.a>
 
               <motion.a
-                href="https://x.com/Georgedamiel_"
+                href={socialLinks.twitter}
                 target="_blank"
                 rel="noreferrer"
                 whileTap={{ scale: 1.1 }}
@@ -55,7 +62,7 @@ const Hero = () => {
               </motion.a>
 
               <motion.a
-                href="https://www.instagram.com/georgeabiamakadaniel2/"
+                href={socialLinks.instagram}
                 target="_blank"
                 rel="noreferrer"
                 whileTap={{ scale: 1.1 }}
@@ -65,7 +72,7 @@ const Hero = () => {
               </motion.a>
 
               <motion.a
-                href="https://www.linkedin.com/in/george-damiel/"
+                href={socialLinks.linkedin}
                 target="_blank"
                 rel="noreferrer"
                 whileTap={{ scale: 1.1 }}
