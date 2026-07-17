@@ -62,6 +62,22 @@ export const projects = [
       "Built with Next.js 16 App Router and Tailwind CSS v4 for optimal performance and developer experience.",
       "Integrated a functional contact form via FormSubmit API and a downloadable CV feature for recruiters."
     ]
+  },
+  {
+    name: "Pxxl Book",
+    company: "SaaS Scheduling Platform",
+    location: "Production App",
+    period: "2026",
+    desc: "Full-featured scheduling platform with Stripe payments, Google Calendar sync, Zoom integrations, and i18n support",
+    lang: "Next.js + React + TypeScript + PostgreSQL",
+    tech: "Next.js + React + TypeScript + PostgreSQL",
+    link: "https://pxxl-book.vercel.app/",
+    details: [
+      "Built and deployed a complete open-source scheduling platform with Stripe payment processing and webhook handling.",
+      "Integrated Google Calendar API with OAuth 2.0 for real-time calendar sync and availability management.",
+      "Configured Zoom, Google Meet, and video conferencing integrations with automated meeting link generation.",
+      "Implemented internationalization (i18n) with 50+ locale support, email verification, and password reset flows."
+    ]
   }
 ];
 
