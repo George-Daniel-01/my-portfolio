@@ -101,7 +101,9 @@ export const experience = [
     location: "Lagos, Nigeria",
     details: [
       "Leading the engineering of a Progressive Web App (PWA) e-commerce platform and affiliate dashboard.",
-      "Optimized application performance, achieving a significantly improved mobile-first user experience."
+      "Optimized application performance, achieving a significantly improved mobile-first user experience.",
+      "Built responsive UI components with React and TailwindCSS for product catalogs and checkout flows.",
+      "Implemented real-time inventory tracking and order management dashboards for internal teams."
     ]
   },
   {
@@ -111,7 +113,9 @@ export const experience = [
     location: "Lagos, Nigeria",
     details: [
       "Built secure backend infrastructure for a high-traffic event management and ticketing platform.",
-      "Designed RESTful APIs handling high-volume ticket sales and real-time booking updates."
+      "Designed RESTful APIs handling high-volume ticket sales and real-time booking updates.",
+      "Integrated payment processing with Paystack for seamless Nigerian local payment handling.",
+      "Developed admin dashboards for event organizers to manage attendees, analytics, and payouts."
     ]
   }
 ];
