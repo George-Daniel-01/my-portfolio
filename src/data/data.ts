@@ -88,6 +88,7 @@ export const experience = [
     period: "2023 - Present",
     location: "PH, Nigeria",
     details: [
+      "Built and deployed Pxxl Book, a full-stack SaaS scheduling platform with Stripe payments and Google Calendar integration.",
       "Architected and deployed scalable web solutions for diverse clients using Next.js and PostgreSQL.",
       "Managed end-to-end development lifecycles, from database schema design to frontend UI.",
       "Oversaw strategic decision-making and project management for a small development team."
@@ -148,4 +149,11 @@ export const skills = [
   { id: 16, title: "Python" },
   { id: 17, title: "Docker" },
   { id: 18, title: "Figma" },
+  { id: 19, title: "Prisma" },
+  { id: 20, title: "Stripe API" },
+  { id: 21, title: "Google APIs" },
+  { id: 22, title: "OAuth 2.0" },
+  { id: 23, title: "Nodemailer" },
+  { id: 24, title: "Vercel" },
+  { id: 25, title: "Postman" },
 ];
