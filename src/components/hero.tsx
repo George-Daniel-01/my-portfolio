@@ -18,19 +18,19 @@ const Hero = () => {
               </h1>
             </div>
             <p className="gradientText font-medium font-pop text-[15px] text-[#FFFFFF99] max-w-[353px] mt-[45px] md:mt-8 lg:mt-1 md:max-w-[639px] md:text-[18px] md:leading-[27px]">
-              I like to craft solid and scalable products with great user experiences.
+              I build solid, scalable products with exceptional user experiences.
             </p>
             <div
               id="intro"
               className="text-[#F0FEFF] font-pop flex-shrink-0 text-[.9em] leading-[1.5] font-medium mt-[40px] flex flex-col gap-8 md:flex md:flex-col md:gap-[20px] md:mt-[45px] lg:flex lg:flex-row lg:items-start lg:gap-[12px]"
             >
               <p className="max-w-[310px]">
-                I&#39;m George Daniel, a software engineer with over 2 years of experience.
-                I specialize in building full-stack web applications, mobile apps, and robust backend systems.
+                I&#39;m George Daniel, a software engineer with over 2 years of experience
+                building full-stack web applications, mobile apps, and robust backend systems.
               </p>
               <p className="max-w-[319px]">
-                A self-taught programmer with a mission to transition complex ideas into high-performance
-                live projects. Active in the tech community and a continuous learner.
+                A self-taught developer driven by a passion for turning complex ideas into
+                high-performance, production-ready products. Always learning, always building.
               </p>
             </div>
 
