@@ -51,6 +51,17 @@ const Projects = () => {
                                     {project.desc}
                                 </p>
 
+                                {project.details && project.details.length > 0 && (
+                                    <ul className="mt-4 space-y-2">
+                                        {project.details.map((detail, i) => (
+                                            <li key={i} className="text-[#FFFFFF80] text-xs flex items-start gap-2">
+                                                <span className="text-purple-400 mt-0.5 shrink-0">▸</span>
+                                                <span>{detail}</span>
+                                            </li>
+                                        ))}
+                                    </ul>
+                                )}
+
                                 <Link
                                     href={project.link}
                                     target="_blank"
