@@ -78,6 +78,22 @@ export const projects = [
       "Configured Zoom, Google Meet, and video conferencing integrations with automated meeting link generation.",
       "Implemented internationalization (i18n) with 50+ locale support, email verification, and password reset flows."
     ]
+  },
+  {
+    name: "Daniel Board",
+    company: "Collaborative Whiteboard",
+    location: "Production App",
+    period: "2026",
+    desc: "Real-time collaborative whiteboard with hand-drawn style, PWA support, end-to-end encryption, and offline capabilities",
+    lang: "React + TypeScript + Vite + PWA",
+    tech: "React + TypeScript + Vite + Workbox",
+    link: "https://daniel-board.vercel.app/",
+    details: [
+      "Built and deployed a full-featured collaborative whiteboard application with real-time editing and end-to-end encryption.",
+      "Implemented PWA support with offline capabilities, service worker caching, and automatic updates via Workbox.",
+      "Customized the UI with a distinctive brand identity including custom theme, logo, and polished welcome screen.",
+      "Integrated real-time collaboration, export to PNG/SVG, shape libraries, and a wide range of drawing tools."
+    ]
   }
 ];
 
