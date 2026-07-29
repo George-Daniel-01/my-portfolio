@@ -193,4 +193,8 @@ export const skills = [
   { id: 23, title: "Nodemailer" },
   { id: 24, title: "Vercel" },
   { id: 25, title: "Postman" },
+  { id: 26, title: "Chart.js" },
+  { id: 27, title: "Playwright" },
+  { id: 28, title: "Axios" },
+  { id: 29, title: "Styled-Components" },
 ];
