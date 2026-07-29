@@ -1,11 +1,8 @@
 "use client"
-
 import { motion } from "framer-motion";
-import { skills } from "../data/data";
+import { skillCategories } from "../data/data";
 
 const Skills = () => {
-
-
     return (
         <section id="skills" className="relative py-32 px-4 md:px-8 lg:px-16 overflow-hidden">
             <div className="absolute inset-0 bg-gradient-to-b from-[#130b1c] via-[#130b1c]/80 to-transparent opacity-30" />
@@ -27,27 +24,44 @@ const Skills = () => {
                     </p>
                 </motion.div>
 
-                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
-                    {skills.map((skill, index) => (
+                <div className="space-y-16">
+                    {skillCategories.map((category, catIndex) => (
                         <motion.div
-                            key={index}
+                            key={catIndex}
                             initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
-                            transition={{ duration: 0.5, delay: index * 0.1 }}
-                            whileHover={{
-                                scale: 1.02,
-                                backgroundColor: 'rgba(111, 28, 215, 0.1)'
-                            }}
-                            className="group relative bg-[#130b1c]/80 backdrop-blur-sm border border-[#ffffff08] p-6 transition-all duration-300"
+                            transition={{ duration: 0.4 }}
                         >
-                            <div className="relative z-10">
-                                <p className="text-white font-medium tracking-wide mb-2">
-                                    {skill.title}
-                                </p>
-                                <div className="h-[1px] w-8 bg-[#6f1cd7]/30 transform origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-300" />
+                            <div className="flex items-center gap-4 mb-8">
+                                <h3 className="text-[#6f1cd7] text-sm tracking-[0.15em] uppercase font-medium">{category.name}</h3>
+                                <div className="h-[1px] flex-1 bg-gradient-to-r from-[#6f1cd7]/40 to-transparent" />
                             </div>
-                            <div className="absolute inset-0 bg-gradient-to-br from-[#6f1cd7]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+
+                            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
+                                {category.skills.map((skill, index) => (
+                                    <motion.div
+                                        key={skill}
+                                        initial={{ opacity: 0, y: 20 }}
+                                        whileInView={{ opacity: 1, y: 0 }}
+                                        viewport={{ once: true }}
+                                        transition={{ duration: 0.5, delay: index * 0.05 }}
+                                        whileHover={{
+                                            scale: 1.02,
+                                            backgroundColor: 'rgba(111, 28, 215, 0.1)'
+                                        }}
+                                        className="group relative bg-[#130b1c]/80 backdrop-blur-sm border border-[#ffffff08] p-6 transition-all duration-300"
+                                    >
+                                        <div className="relative z-10">
+                                            <p className="text-white font-medium tracking-wide mb-2">
+                                                {skill}
+                                            </p>
+                                            <div className="h-[1px] w-8 bg-[#6f1cd7]/30 transform origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-300" />
+                                        </div>
+                                        <div className="absolute inset-0 bg-gradient-to-br from-[#6f1cd7]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                                    </motion.div>
+                                ))}
+                            </div>
                         </motion.div>
                     ))}
                 </div>

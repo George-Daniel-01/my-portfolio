@@ -15,7 +15,7 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL('https://georgedaniel.me'),
   title: 'George Daniel | Creative Software Engineer',
-  description: 'Creative Software Engineer with 2+ years of experience, specializing in full-stack web development, backend architecture, and scalable digital products. Building high-performance experiences with React, Node.js, and PostgreSQL.',
+  description: 'Creative Software Engineer with 5+ years of experience, specializing in full-stack web development, backend architecture, and scalable digital products. Building high-performance experiences with React, Node.js, and PostgreSQL.',
   keywords: ['George Daniel', 'Software Engineer', 'Full Stack Developer', 'Web Development', 'Backend Developer', 'Node.js', 'PostgreSQL', 'React Developer'],
   authors: [{ name: 'George Daniel' }],
   creator: 'George Daniel',

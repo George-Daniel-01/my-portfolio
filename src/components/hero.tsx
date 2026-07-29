@@ -18,19 +18,21 @@ const Hero = () => {
               </h1>
             </div>
             <p className="gradientText font-medium font-pop text-[15px] text-[#FFFFFF99] max-w-[353px] mt-[45px] md:mt-8 lg:mt-1 md:max-w-[639px] md:text-[18px] md:leading-[27px]">
-              I build solid, scalable products with exceptional user experiences.
+              I build AI-powered platforms, payment infrastructure, and real-time collaborative tools used by real users.
             </p>
             <div
               id="intro"
               className="text-[#F0FEFF] font-pop flex-shrink-0 text-[.9em] leading-[1.5] font-medium mt-[40px] flex flex-col gap-8 md:flex md:flex-col md:gap-[20px] md:mt-[45px] lg:flex lg:flex-row lg:items-start lg:gap-[12px]"
             >
-              <p className="max-w-[310px]">
-                I&#39;m George Daniel, a software engineer with over 5 years of experience
-                building full-stack web applications, mobile apps, and robust backend systems.
+              <p className="max-w-[320px]">
+                I architect and ship full-stack products — from AI-powered e-commerce
+                platforms processing Stripe payments to real-time collaborative
+                whiteboards with end-to-end encryption. React, Node.js, PostgreSQL.
               </p>
-              <p className="max-w-[319px]">
-                A self-taught developer driven by a passion for turning complex ideas into
-                high-performance, production-ready products. Always learning, always building.
+              <p className="max-w-[320px]">
+                Self-taught, 5+ years in production. I don&#39;t just build demos —
+                I build things people pay for. Every project on this site has
+                real users and real transactions.
               </p>
             </div>
 

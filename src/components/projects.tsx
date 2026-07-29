@@ -62,20 +62,38 @@ const Projects = () => {
                                     </ul>
                                 )}
 
-                                <Link
-                                    href={project.link}
-                                    target="_blank"
-                                    rel="noreferrer"
-                                    className="mt-6 inline-flex items-center group/link"
-                                >
-                                    <motion.div
-                                        whileHover={{ x: 5 }}
-                                        className="flex items-center space-x-3 text-white hover:text-purple-300 transition-colors"
+                                <div className="mt-6 flex items-center gap-4">
+                                    <Link
+                                        href={project.link}
+                                        target="_blank"
+                                        rel="noreferrer"
+                                        className="inline-flex items-center group/link"
                                     >
-                                        <span className="text-sm font-medium">View Project</span>
-                                        <Arrow className="w-4 h-4 transform group-hover/link:translate-x-1 transition-transform" />
-                                    </motion.div>
-                                </Link>
+                                        <motion.div
+                                            whileHover={{ x: 5 }}
+                                            className="flex items-center space-x-3 text-white hover:text-purple-300 transition-colors"
+                                        >
+                                            <span className="text-sm font-medium">View Project</span>
+                                            <Arrow className="w-4 h-4 transform group-hover/link:translate-x-1 transition-transform" />
+                                        </motion.div>
+                                    </Link>
+                                    {project.github && (
+                                        <Link
+                                            href={project.github}
+                                            target="_blank"
+                                            rel="noreferrer"
+                                            className="inline-flex items-center group/link"
+                                        >
+                                            <motion.div
+                                                whileHover={{ x: 5 }}
+                                                className="flex items-center space-x-3 text-[#FFFFFF99] hover:text-purple-300 transition-colors"
+                                            >
+                                                <span className="text-sm font-medium">View Code</span>
+                                                <Arrow className="w-4 h-4 transform group-hover/link:translate-x-1 transition-transform" />
+                                            </motion.div>
+                                        </Link>
+                                    )}
+                                </div>
 
                                 <div className="h-[2px] w-full bg-gradient-to-r from-purple-500/50 to-blue-500/50 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 absolute bottom-0 left-0" />
                             </div>

@@ -9,24 +9,24 @@ import {
 const services = [
     {
         id: 1,
-        title: "FRONTEND DEVELOPMENT",
-        description: "Crafting responsive and interactive web applications using React, Next.js, and TypeScript. Focusing on modern UI/UX practices and optimal performance.",
+        title: "AI-POWERED APPLICATIONS",
+        description: "Integrating LLMs and AI search into production apps — natural language product search via OpenRouter/Anthropic, AI-powered recommendations, and intelligent query processing.",
         icon: Code,
-        category: "Development"
+        category: "AI"
     },
     {
         id: 2,
-        title: "BACKEND DEVELOPMENT",
-        description: "Building robust server-side applications and APIs using Node.js, Python, and database technologies. Ensuring scalability and security.",
+        title: "PAYMENT INFRASTRUCTURE",
+        description: "End-to-end payment pipeline design: Stripe Checkout + webhooks, Paystack integration for African markets, subscription billing, refund reconciliation, and PCI-compliant architecture.",
         icon: Server,
-        category: "Development"
+        category: "Payments"
     },
     {
         id: 3,
-        title: "APP DEVELOPMENT",
-        description: "Developing cross-platform mobile applications and desktop software solutions that deliver seamless user experiences across different devices.",
+        title: "REAL-TIME SYSTEMS",
+        description: "Socket.io-based real-time collaboration, PWA offline support with Workbox service workers, live dashboards with Recharts, and OAuth 2.0 integrations (Google, Zoom, Google Calendar).",
         icon: Smartphone,
-        category: "Mobile"
+        category: "RealTime"
     }
 ];
 
@@ -49,7 +49,7 @@ const Services = () => {
                     </h1>
                     <div className="h-1 w-24 bg-gradient-to-r from-purple-500 to-blue-500 mb-6" />
                     <p className="text-[#FFFFFF99] text-base md:text-lg ">
-                        Specialized in multiple domains of software engineering
+                        What I actually build day-to-day
                     </p>
                 </motion.div>
 
