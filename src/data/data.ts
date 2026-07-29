@@ -74,6 +74,7 @@ export const projects = [
     location: "Production App",
     period: "2026",
     desc: "Spotify data visualization app with audio DNA radar charts, genre analysis, and listening personality insights",
+    featured: true,
     lang: "React.js + Chart.js + Styled-Components + Playwright",
     tech: "React.js + Chart.js + Styled-Components + Playwright",
     link: "https://spotify-profile-full.vercel.app/taste",

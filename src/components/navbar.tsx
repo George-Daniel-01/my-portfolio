@@ -30,6 +30,10 @@ const Navbar = () => {
               ))}
             </div>
 
+            <span className="hidden md:inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[10px] font-semibold bg-green-500/15 text-green-400 border border-green-500/30 tracking-wide">
+              <span className="w-1.5 h-1.5 rounded-full bg-green-400 animate-pulse" />
+              Open to Work
+            </span>
             <a
               href={socialLinks.github}
               target="_blank"

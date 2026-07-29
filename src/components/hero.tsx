@@ -40,6 +40,9 @@ const Hero = () => {
               <a href="#contact" className="inline-block px-6 py-3 bg-[#6f1cd7] text-white font-medium text-sm rounded hover:bg-[#5a16b0] transition-colors">
                 Hire Me
               </a>
+              <a href="/pdf/resume.pdf" target="_blank" className="inline-block px-6 py-3 border border-[#6f1cd7] text-[#6f1cd7] font-medium text-sm rounded hover:bg-[#6f1cd7] hover:text-white transition-colors">
+                Download CV
+              </a>
             </div>
 
             <div className="mt-[35px] md:mt-[45px] flex justify-start items-center gap-[26px] md:gap-[40px]">
