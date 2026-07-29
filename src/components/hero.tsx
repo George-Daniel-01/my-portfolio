@@ -1,17 +1,35 @@
 ﻿'use client'
-import { motion } from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
+import { useRef } from "react";
 import { FbIcon, IgIcon, InIcon, TwIcon } from "./svgs";
 import Image from 'next/image';
 import { socialLinks } from "../data/data";
 
 const Hero = () => {
+  const sectionRef = useRef<HTMLElement>(null);
+  const { scrollYProgress } = useScroll({
+    target: sectionRef,
+    offset: ["start start", "end start"],
+  });
+  const imageY = useTransform(scrollYProgress, [0, 1], [0, 80]);
+  const opacity = useTransform(scrollYProgress, [0, 0.8], [1, 0]);
+
   return (
     <>
-      <section id="hero" className="mx-auto px-[38px] pt-[100px] md:px-[26px] lg:pt-[120px] lg:pl-[80px] lg:pr-[40px]">
+      <section ref={sectionRef} id="hero" className="mx-auto px-[38px] pt-[100px] md:px-[26px] lg:pt-[120px] lg:pl-[80px] lg:pr-[40px]">
         <div className="flex flex-col items-start flex-1 md:flex md:flex-row md:gap-10 md:items-center lg:flex lg:flex-row lg:items-center lg:gap-x-12 lg:justify-between">
           
           {/* LEFT SIDE - TEXT */}
           <div>
+            <div className="flex items-center gap-3 mb-6">
+              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[10px] font-semibold bg-green-500/15 text-green-400 border border-green-500/30 tracking-wide">
+                <span className="w-1.5 h-1.5 rounded-full bg-green-400 animate-pulse" />
+                Available for Work
+              </span>
+              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[10px] font-semibold bg-purple-500/15 text-purple-400 border border-purple-500/30 tracking-wide">
+                Currently Building ShopMate & Spotify
+              </span>
+            </div>
             <div className="gradientText">
               <h1 className="text-white font-clashbold">
                 Creative Software Engineer<span>.</span>
@@ -99,6 +117,7 @@ const Hero = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6 }}
+                style={{ y: imageY, opacity }}
                 className="relative z-10 w-[280px] h-[340px] lg:w-[380px] lg:h-[460px] overflow-hidden"
               >
                 <Image

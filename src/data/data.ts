@@ -141,6 +141,8 @@ export const contactInfo = {
   location: "Lagos, Nigeria",
 };
 
+export const testimonials: { name: string; role: string; quote: string }[] = [];
+
 export const skillCategories = [
   {
     name: "Frontend",
