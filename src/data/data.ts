@@ -64,6 +64,23 @@ export const projects = [
     ]
   },
   {
+    name: "Spotify Taste Profile",
+    company: "Fullstack Debugging & Fixes",
+    location: "Production App",
+    period: "2026",
+    desc: "Spotify data visualization app with audio DNA radar charts, genre analysis, and listening personality insights",
+    lang: "React.js + Chart.js + Styled-Components + Playwright",
+    tech: "React.js + Chart.js + Styled-Components + Playwright",
+    link: "https://spotify-profile-full.vercel.app/taste",
+    details: [
+      "Diagnosed and resolved a cascade of production bugs caused by Spotify API deprecations — audio-features API now returns 403 for unverified apps.",
+      "Built a genre-to-audio-features estimation engine as a drop-in replacement, restoring all chart rendering without changing the API contract.",
+      "Discovered that Spotify's /me/top/artists endpoint omits genres, followers, and popularity fields — debugged via CDP-based browser automation (TMWebDriver) directly on the live production site.",
+      "Fixed error boundary crashes exposed after the first fix revealed a hidden second bug (WrappedStats rendering on undefined followers.total).",
+      "Achieved 13/13 Playwright integration tests passing with full canvas rendering, stat grid, personality card, and listening habits charts."
+    ]
+  },
+  {
     name: "Pxxl Book",
     company: "SaaS Scheduling Platform",
     location: "Production App",
