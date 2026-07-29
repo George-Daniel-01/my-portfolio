@@ -5,8 +5,8 @@ export const projects = [
     location: "Production App",
     period: "2025 - 2026",
     desc: "AI-powered e-commerce platform with customer storefront, Stripe payments, and OpenRouter AI product search",
-    lang: "React.js + Node.js + TypeScript + PostgreSQL",
-    tech: "React.js + Node.js + TypeScript + PostgreSQL",
+    lang: "React.js + TypeScript + Vite + TailwindCSS + PostgreSQL",
+    tech: "React.js + TypeScript + Vite + TailwindCSS + Stripe",
     link: "https://shop-mate-six-azure.vercel.app/",
     details: [
       "Architected a full-stack e-commerce platform serving real users with secure payment processing via Stripe API.",
@@ -21,8 +21,8 @@ export const projects = [
     location: "Production App",
     period: "2025 - 2026",
     desc: "Admin panel with real-time analytics, role-based auth, and comprehensive inventory management",
-    lang: "React.js + Node.js + TypeScript + PostgreSQL",
-    tech: "React.js + Node.js + TypeScript + PostgreSQL",
+    lang: "React.js + TypeScript + Vite + TailwindCSS + Recharts",
+    tech: "React.js + TypeScript + Vite + TailwindCSS + Redux Toolkit",
     link: "https://shop-dashboard-tan.vercel.app/",
     details: [
       "Built a full-featured admin dashboard for managing products, orders, and customers with real-time analytics via Recharts.",
