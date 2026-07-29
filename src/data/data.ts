@@ -1,54 +1,20 @@
 export const projects = [
   {
-    name: "ShopMate E-Commerce",
+    name: "ShopMate — Full-Stack E-Commerce Ecosystem",
     company: "Fullstack E-Commerce",
     location: "Production App",
     period: "2025 - 2026",
-    desc: "AI-powered e-commerce platform with customer storefront, Stripe payments, and OpenRouter AI product search",
-    lang: "React.js + TypeScript + Vite + TailwindCSS + PostgreSQL",
-    tech: "React.js + TypeScript + Vite + TailwindCSS + Stripe",
+    desc: "Complete e-commerce ecosystem: AI-powered storefront, admin dashboard with real-time analytics, and RESTful backend API",
+    lang: "React.js + TypeScript + Vite + TailwindCSS + Node.js + Express + PostgreSQL + Stripe + OpenRouter AI + Cloudinary",
+    tech: "React.js + TypeScript + Vite + TailwindCSS + Node.js + Express + PostgreSQL + Stripe + OpenRouter AI + Cloudinary",
     link: "https://shop-mate-six-azure.vercel.app/",
-    github: "https://github.com/George-Daniel-01/ShopMate/tree/main/frontend",
-    details: [
-      "Architected a full-stack e-commerce platform serving real users with secure payment processing via Stripe API.",
-      "Integrated OpenRouter AI for natural language product search, enabling intelligent shopping queries.",
-      "Designed relational database schema in PostgreSQL with optimized queries reducing page load times.",
-      "Implemented JWT authentication with secure cookie-based sessions and role-based access control."
-    ]
-  },
-  {
-    name: "ShopMate Admin Dashboard",
-    company: "Fullstack E-Commerce",
-    location: "Production App",
-    period: "2025 - 2026",
-    desc: "Admin panel with real-time analytics, role-based auth, and comprehensive inventory management",
-    lang: "React.js + TypeScript + Vite + TailwindCSS + Recharts",
-    tech: "React.js + TypeScript + Vite + TailwindCSS + Redux Toolkit",
-    link: "https://shop-dashboard-tan.vercel.app/",
-    github: "https://github.com/George-Daniel-01/ShopMate/tree/main/ecommerce-dashboard-template",
-    details: [
-      "Built a full-featured admin dashboard for managing products, orders, and customers with real-time analytics via Recharts.",
-      "Implemented role-based authentication ensuring only authorized admins can access sensitive operations.",
-      "Integrated Cloudinary for efficient product image uploads and CDN-based media management.",
-      "Developed RESTful API endpoints with OpenRouter AI search handling thousands of requests with proper error handling and validation."
-    ]
-  },
-  {
-    name: "ShopMate Backend API",
-    company: "Fullstack E-Commerce",
-    location: "Production API",
-    period: "2025 - 2026",
-    desc: "RESTful API with PostgreSQL, JWT auth, Stripe payments, OpenRouter AI search, and Cloudinary media",
-    lang: "Node.js + Express + TypeScript + PostgreSQL",
-    tech: "Node.js + Express + TypeScript + PostgreSQL",
-    link: "https://github.com/George-Daniel-01/ShopMate",
     github: "https://github.com/George-Daniel-01/ShopMate",
+    secondaryLink: "https://shop-dashboard-tan.vercel.app/",
     details: [
-      "Architected a production RESTful API with Express handling thousands of concurrent requests and secure payment processing via Stripe.",
-      "Integrated OpenRouter AI for natural language product search, enabling AI-powered shopping experiences.",
-      "Designed relational PostgreSQL schema with optimized queries, indexes, and migrations for data integrity.",
-      "Implemented JWT authentication with secure HTTP-only cookie sessions and role-based access control.",
-      "Built file upload pipeline with Cloudinary CDN for efficient product image management and delivery."
+      "Built a production e-commerce platform with Stripe payment processing, OpenRouter AI natural language search, and secure JWT authentication serving real users.",
+      "Engineered a full-featured admin dashboard with Recharts real-time analytics, role-based access control, and Cloudinary media management.",
+      "Designed and deployed RESTful API with Express handling thousands of concurrent requests, PostgreSQL with optimized indexes, and AI-powered product search.",
+      "Architected as a monorepo with 3 deployments: customer storefront, admin dashboard, and backend API — all sharing the same PostgreSQL database and authentication system."
     ]
   },
   {

@@ -109,7 +109,7 @@ const Projects = () => {
                                     </ul>
                                 )}
 
-                                <div className="mt-6 flex items-center gap-4">
+                                <div className="mt-6 flex flex-wrap items-center gap-x-4 gap-y-2">
                                     <Link
                                         href={project.link}
                                         target="_blank"
@@ -124,6 +124,22 @@ const Projects = () => {
                                             <Arrow className="w-4 h-4 transform group-hover/link:translate-x-1 transition-transform" />
                                         </motion.div>
                                     </Link>
+                                    {project.secondaryLink && (
+                                        <Link
+                                            href={project.secondaryLink}
+                                            target="_blank"
+                                            rel="noreferrer"
+                                            className="inline-flex items-center group/link"
+                                        >
+                                            <motion.div
+                                                whileHover={{ x: 5 }}
+                                                className="flex items-center space-x-3 text-[#FFFFFF99] hover:text-purple-300 transition-colors"
+                                            >
+                                                <span className="text-sm font-medium">Admin Dashboard</span>
+                                                <Arrow className="w-4 h-4 transform group-hover/link:translate-x-1 transition-transform" />
+                                            </motion.div>
+                                        </Link>
+                                    )}
                                     {project.github && (
                                         <Link
                                             href={project.github}
