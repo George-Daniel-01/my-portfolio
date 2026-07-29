@@ -74,16 +74,16 @@ export const projects = [
     company: "Collaborative Whiteboard",
     location: "Production App",
     period: "2026",
-    desc: "Real-time collaborative whiteboard with hand-drawn style, PWA support, end-to-end encryption, and offline capabilities",
-    lang: "React + TypeScript + Vite + PWA",
-    tech: "React + TypeScript + Vite + Workbox",
+    desc: "Customized deployment of Excalidraw with PWA support, custom branding, and Firebase real-time backend",
+    lang: "React + TypeScript + Vite + PWA + Firebase",
+    tech: "React + TypeScript + Vite + Excalidraw + Workbox + Firebase",
     link: "https://daniel-board.vercel.app/",
     github: "https://github.com/George-Daniel-01/daniel-board",
     details: [
-      "Built and deployed a full-featured collaborative whiteboard application with real-time editing and end-to-end encryption.",
-      "Implemented PWA support with offline capabilities, service worker caching, and automatic updates via Workbox.",
-      "Customized the UI with a distinctive brand identity including custom theme, logo, and polished welcome screen.",
-      "Integrated real-time collaboration, export to PNG/SVG, shape libraries, and a wide range of drawing tools."
+      "Customized and deployed Excalidraw — the popular open-source whiteboard — with custom branding, PWA configuration, and Firebase real-time backend.",
+      "Configured Workbox service worker for offline caching and automatic updates, enabling full PWA support.",
+      "Set up Vercel deployment pipeline with serverless functions and custom domain configuration.",
+      "Built and deployed the full Excalidraw feature set: real-time collaboration, hand-drawn-style drawing, end-to-end encryption, and export to PNG/SVG."
     ]
   }
 ];
