@@ -37,6 +37,10 @@ npm run build
 npm start
 ```
 
-## Deployment
+## Live Site
 
-Deployed on Vercel.
+Deployed on Vercel — [https://george-daniel.vercel.app](https://george-daniel.vercel.app)
+
+```bash
+vercel --prod   # deploy from this directory
+```
