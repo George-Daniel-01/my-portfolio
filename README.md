@@ -44,3 +44,9 @@ Deployed on Vercel — [https://george-daniel.vercel.app](https://george-daniel.
 ```bash
 vercel --prod   # deploy from this directory
 ```
+
+## Authentication (Google Sign-In with Clerk)
+
+The site uses Clerk for Google sign-in. Before running locally, create a free project at https://clerk.com, enable **Google** under *User & Authentication -> Social Connections*, then paste the two keys into `.env.local`: `NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY` and `CLERK_SECRET_KEY`. The app will not boot until these are set.
+
+**Deploy note:** after deploying, add your production domain (e.g. `https://george-daniel.vercel.app`) to the Clerk dashboard under *User & Authentication -> Security* allowed origins / authorized redirect URIs, or Google sign-in will fail on the live site.
