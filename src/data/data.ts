@@ -88,6 +88,18 @@ export const projects = [
   }
 ];
 
+export const certifications = [
+  {
+    title: "Diploma in Web Development",
+    issuer: "NIIT",
+    location: "NIIT Agbara Centre, Nigeria",
+    date: "May 2026",
+    grade: "Average",
+    credentialId: "S253030000139 / R253030000139",
+    image: "/images/niit-certificate.png",
+  }
+];
+
 export const experience = [
   {
     role: "Founder & Fullstack Developer",

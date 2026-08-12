@@ -16,12 +16,12 @@ const Hero = () => {
 
   return (
     <>
-      <section ref={sectionRef} id="hero" className="mx-auto px-[38px] pt-[100px] md:px-[26px] lg:pt-[120px] lg:pl-[80px] lg:pr-[40px]">
+      <section ref={sectionRef} id="hero" className="mx-auto px-6 sm:px-[38px] pt-[100px] md:px-[26px] lg:pt-[120px] lg:pl-[80px] lg:pr-[40px]">
         <div className="flex flex-col items-start flex-1 md:flex md:flex-row md:gap-10 md:items-center lg:flex lg:flex-row lg:items-center lg:gap-x-12 lg:justify-between">
           
           {/* LEFT SIDE - TEXT */}
           <div>
-            <div className="flex items-center gap-3 mb-6">
+            <div className="flex flex-wrap items-center gap-3 mb-6">
               <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[10px] font-semibold bg-green-500/15 text-green-400 border border-green-500/30 tracking-wide">
                 <span className="w-1.5 h-1.5 rounded-full bg-green-400 animate-pulse" />
                 Available for Work
@@ -107,8 +107,8 @@ const Hero = () => {
           </div>
 
           {/* RIGHT SIDE - PHOTO */}
-          <div className="mt-[2.5rem] md:mt-0 flex-shrink-0">
-            <div className="relative">
+          <div className="mt-[2.5rem] md:mt-0 w-full md:w-auto flex-shrink-0">
+            <div className="relative w-full max-w-[280px] mx-auto md:mx-0 lg:max-w-[380px]">
               {/* Purple border box (offset behind) */}
               <div className="absolute inset-0 border-[3px] border-[#6f1cd7] translate-x-3 translate-y-3 lg:translate-x-5 lg:translate-y-5" />
               
@@ -118,12 +118,13 @@ const Hero = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6 }}
                 style={{ y: imageY, opacity }}
-                className="relative z-10 w-[280px] h-[340px] lg:w-[380px] lg:h-[460px] overflow-hidden"
+                className="relative z-10 w-full aspect-[280/340] lg:aspect-[380/460] overflow-hidden"
               >
                 <Image
                   src="/images/hero.png"
                   alt="George Daniel"
-                  fill sizes="(max-width: 768px) 280px, 380px"
+                  fill
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 280px, 380px"
                   className="object-cover object-top"
                   draggable={false}
                   priority

@@ -1,3 +1,4 @@
+import Certifications from "@/components/certifications";
 import Contact from "@/components/contact";
 import Cursor from "@/components/cursor";
 import Experience from "@/components/experience";
@@ -23,6 +24,7 @@ export default function Home() {
       <Projects />
       <Testimonials />
       <Skills />
+      <Certifications />
       <Experience />
       <Contact />
       <Footer />
