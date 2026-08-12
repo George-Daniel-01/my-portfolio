@@ -96,7 +96,7 @@ export const certifications = [
     date: "May 2026",
     grade: "Average",
     credentialId: "S253030000139 / R253030000139",
-    image: "/images/niit-certificate.png",
+    image: "/images/niit-certificate.jpg",
   }
 ];
 

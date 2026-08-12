@@ -108,27 +108,29 @@ const Hero = () => {
 
           {/* RIGHT SIDE - PHOTO */}
           <div className="mt-[2.5rem] md:mt-0 w-full md:w-[280px] lg:w-[380px] flex-shrink-0">
-            <div className="relative w-full max-w-[280px] mx-auto md:mx-0 lg:max-w-[380px]">
-              {/* Purple border box (offset behind) */}
-              <div className="absolute inset-0 border-[3px] border-[#6f1cd7] translate-x-3 translate-y-3 lg:translate-x-5 lg:translate-y-5" />
-              
-              {/* Your photo */}
+            <div className="w-full max-w-[280px] mx-auto md:mx-0 lg:max-w-[380px]">
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6 }}
                 style={{ y: imageY, opacity }}
-                className="relative z-10 w-full aspect-[280/340] lg:aspect-[380/460] overflow-hidden"
+                className="relative"
               >
-                <Image
-                  src="/images/hero.png"
-                  alt="George Daniel"
-                  fill
-                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 280px, 380px"
-                  className="object-cover object-top"
-                  draggable={false}
-                  priority
-                />
+                {/* Purple border box (offset behind, moves with photo) */}
+                <div className="absolute inset-0 border-[3px] border-[#6f1cd7] translate-x-2 translate-y-2 lg:translate-x-5 lg:translate-y-5" />
+                
+                {/* Your photo */}
+                <div className="relative z-10 aspect-[280/340] lg:aspect-[380/460] overflow-hidden">
+                  <Image
+                    src="/images/hero.png"
+                    alt="George Daniel"
+                    fill
+                    sizes="(max-width: 640px) 280px, (max-width: 1024px) 280px, 380px"
+                    className="object-cover object-top"
+                    draggable={false}
+                    priority
+                  />
+                </div>
               </motion.div>
             </div>
           </div>
