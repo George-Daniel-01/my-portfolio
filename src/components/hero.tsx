@@ -107,7 +107,7 @@ const Hero = () => {
           </div>
 
           {/* RIGHT SIDE - PHOTO */}
-          <div className="mt-[2.5rem] md:mt-0 w-full md:w-auto flex-shrink-0">
+          <div className="mt-[2.5rem] md:mt-0 w-full md:w-[280px] lg:w-[380px] flex-shrink-0">
             <div className="relative w-full max-w-[280px] mx-auto md:mx-0 lg:max-w-[380px]">
               {/* Purple border box (offset behind) */}
               <div className="absolute inset-0 border-[3px] border-[#6f1cd7] translate-x-3 translate-y-3 lg:translate-x-5 lg:translate-y-5" />
