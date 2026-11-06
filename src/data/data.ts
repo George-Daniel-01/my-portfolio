@@ -88,7 +88,36 @@ export const projects = [
   }
 ];
 
-export const certifications = [
+export type Certification = {
+  title: string;
+  issuer: string;
+  location: string;
+  date: string;
+  grade?: string;
+  credentialId: string;
+  verifyUrl?: string;
+  image: string;
+};
+
+export const certifications: Certification[] = [
+  {
+    title: "Introduction to Software Engineering",
+    issuer: "IBM via Coursera",
+    location: "Online",
+    date: "Nov 2026",
+    credentialId: "F3GBU7ZLVC5Y",
+    verifyUrl: "https://coursera.org/verify/F3GBU7ZLVC5Y",
+    image: "/images/coursera-software-engineering.png",
+  },
+  {
+    title: "Prompt Engineering for Generative AI",
+    issuer: "IBM via Coursera",
+    location: "Online",
+    date: "Nov 2026",
+    credentialId: "QDUYR2DXTI1Z",
+    verifyUrl: "https://coursera.org/verify/QDUYR2DXTI1Z",
+    image: "/images/coursera-prompt-engineering.png",
+  },
   {
     title: "Diploma in Web Development",
     issuer: "NIIT",

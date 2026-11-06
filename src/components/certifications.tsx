@@ -65,12 +65,25 @@ const Certifications = () => {
               </div>
 
               <div className="flex flex-wrap gap-2">
-                <span className="inline-block px-3 py-1 text-xs font-medium rounded-full border border-[#ffffff15] bg-[#0b040c] text-[#FFFFFFCC]">
-                  Grade: {cert.grade}
-                </span>
-                <span className="inline-block px-3 py-1 text-xs font-medium rounded-full border border-[#ffffff15] bg-[#0b040c] text-[#FFFFFFCC]">
-                  Credential: {cert.credentialId}
-                </span>
+                {cert.grade && (
+                  <span className="inline-block px-3 py-1 text-xs font-medium rounded-full border border-[#ffffff15] bg-[#0b040c] text-[#FFFFFFCC]">
+                    Grade: {cert.grade}
+                  </span>
+                )}
+                {cert.verifyUrl ? (
+                  <a
+                    href={cert.verifyUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block px-3 py-1 text-xs font-medium rounded-full border border-[#ffffff15] bg-[#0b040c] text-[#FFFFFFCC] hover:border-[#6f1cd7] hover:text-white transition-colors"
+                  >
+                    Credential: {cert.credentialId} ↗
+                  </a>
+                ) : (
+                  <span className="inline-block px-3 py-1 text-xs font-medium rounded-full border border-[#ffffff15] bg-[#0b040c] text-[#FFFFFFCC]">
+                    Credential: {cert.credentialId}
+                  </span>
+                )}
               </div>
             </motion.div>
           ))}
